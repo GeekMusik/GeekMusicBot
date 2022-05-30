@@ -68,6 +68,10 @@
         "value": "",
         "required": true
       },
+      "MUST_JOIN": {
+        "description": "Fill with channel or group username without @ and make the admin on the gc or ch to force members to join first to be able to use bots",
+        "value": "GeekMusikUpdate"
+      },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
         "value": "https://github.com/GeekMusik/GeekMusicBot",
