@@ -1,4 +1,4 @@
-<img src="https://telegra.ph/file/c0e014ff34f34d1056627.png" align="right" width="200" height="200"/>
+<img src="https://telegra.ph/file/954a98bf3ce6866fb428f.png" align="right" width="200" height="200"/>
 
 # Geek Music Bot <img src="https://img.shields.io/github/v/release/GeekMusik/GeekMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
