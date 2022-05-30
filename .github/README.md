@@ -57,7 +57,7 @@ For more information on the technologies that power the Geek Music Bot, check ou
 ## 🚀 Heroku Deployment
 
 <h4>Click the button below to deploy Geek on Heroku!</h4>    
-<a href="https://Geek.tech/deploy/"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/GeekMusik/GeekMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
 
 > Want detailed explanation of Heroku Deployment? [Click Here](https://notreallyshikhar.gitbook.io/Geekmusicbot/deployment/heroku)
 
