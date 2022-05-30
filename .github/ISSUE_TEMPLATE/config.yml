@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Geek Support
+    url: https://t.me/GeekSupportKu
+    about: Direct chat on non-inquiries subjects.
+  - name: Documentation
+    url: https://geek.bot.nu
+    about: Documentation for getting started with bot.
