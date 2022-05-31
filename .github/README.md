@@ -7,7 +7,7 @@ Geek Music  ᴀᴅᴀʟᴀʜ  ʀᴇᴘᴏ  ᴄʟᴏɴᴇ  ᴅᴀʀɪ  [ʏᴜᴋ�
 
 ## DEPLOY DI HEROKU
 
-<p align="center"><a href="https://geekmusic.mhpay.repl.co/deploy"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
+<a href="https://geekmusic.mhpay.repl.co/deploy"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
 <a href="https://dashboard.heroku.com/new?template=https://github.com/GeekMusik/GeekMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
 
 
