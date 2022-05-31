@@ -56,7 +56,7 @@ Terimakasih
 
 ### Mari terhubung!
 <p>
-    <a href="https://t.me/mr_theherd" target="blank"><img src="https://img.shields.io/badge/@GeekMusik-30302f?style=flat&logo=telegram"width="254" height="52"/></a>
+    <a href="https://t.me/mr_theherd" target="blank"><img src="https://img.shields.io/badge/@Cobra-30302f?style=flat&logo=telegram"width="254" height="52"/></a>
     <a href="https://t.me/GeekMusik" target="blank"><img src="https://img.shields.io/badge/Geek Music GROUP-black?style=flat&logo=telegram"width="319" height="52"/></a>
     <a href="https://t.me/GeekMusikUpdate" target="blank"><img src="https://img.shields.io/badge/Geek Music CHANNEL-gold?style=flat&logo=telegram"width="332" height="49"/></a>
 </p>
