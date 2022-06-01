@@ -1,37 +1,62 @@
-## Welcome to GitHub Pages
+<h1><p align="center"><a>Geek Music</a><p/><h1/>
+<p align="center"><a href="https://github.com/GeekMusik/GeekMusicBot"><img src="https://telegra.ph/file/954a98bf3ce6866fb428f.png"width="300"heigh="100" /></a></p>
 
-You can use the [editor on GitHub](https://github.com/GeekMusik/GeekMusicBot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+Geek Music  ᴀᴅᴀʟᴀʜ  ʀᴇᴘᴏ  ᴄʟᴏɴᴇ  ᴅᴀʀɪ  [ʏᴜᴋᴋɪᴍᴜsɪᴄʙᴏᴛ](https://github.com/TeamYukki/YukkiMusicBot)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## DEPLOY DI HEROKU
 
-```markdown
-Syntax highlighted code block
+<p align="center"><a href="https://geekmusic.mhpay.repl.co/deploy"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/GeekMusik/GeekMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## DEPLOY OKTETO
 
-1. Numbered
-2. List
+<a href="https://cloud.okteto.com/deploy?repository=https://github.com/GeekMusik/GeekMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200"/></a>
 
-**Bold** and _Italic_ and `Code` text
+## STRINGS SESSION PYROGRAM
 
-[Link](url) and ![Image](src)
-```
+<p align="center"><a href="https://replit.com/@mhpay/strings-session#main.py"><img src="https://img.shields.io/badge/REPLIT-STRINGS-yellow?style=plastic&logo=replit&logoColor=yellow"width="270" height="40" /></a></p>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## COMMAND ADMINS 🧑‍✈️
 
-### Jekyll Themes
+- c = adalah singkatan dari pemutaran channel
+- /pause atau /cpause - Menjeda musik yang sedang diputar.
+- /resume atau /cresume- Melanjutkan musik yang dijeda.
+- /mute atau /cmute- Mematikan musik yang diputar.
+- /unmute atau /cunmute- Mengaktifkan musik yang dimatikan.
+- /skip atau /cskip- Lewati musik yang sedang diputar.
+- /stop atau /cstop- Menghentikan pemutaran musik.
+- /shuffle atau /cshuffle- Secara acak mengacak daftar putar yang antri.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GeekMusik/GeekMusicBot/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## COMMAND MEMBERS 👥
+- /play atau /vplay atau /cplay - Bot akan mulai memainkan kueri yang Anda berikan pada obrolan suara.
 
-### Support or Contact
+- /stream atau /cstream - Streaming tautan langsung di obrolan suara.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- /channelplay [Nama pengguna atau id obrolan] atau [Nonaktifkan] - Hubungkan saluran ke grup dan streaming musik di obrolan suara saluran dari grup Anda.
+## DEPLOY VPS
+Nih kak cara deploy di vps
+- `git clone https://github.com/GeekMusik/GeekMusicBot`
+- `cd GeekMusicBot`
+- `bash setup`
+- `screen -S GeekMusic`
+- `python3 -m GeekMusic / bash start`
+
+## ORIGINAL REPO
+> Terimakasih untuk [@NotReallyShikhar](https://github.com/NotReallyShikhar) dan [Team Yukki](https://github.com/TeamYukki) Untuk sumber code nya
+
+- [YukkiMusicBot](https://github.com/TeamYukki/YukkiMusicBot) - Original Repo
+
+## CONTRIBUTOR
+Terimakasih
+- [@NotReallyShikhar](https://github.com/NotReallyShikhar) - Dev
+- [@GeekMusik](https://github.com/GeekMusik) - Modif
+
+### Mari terhubung!
+<p>
+    <a href="https://t.me/mr_theherd" target="blank"><img src="https://img.shields.io/badge/@Cobra-30302f?style=flat&logo=telegram"width="254" height="52"/></a>
+    <a href="https://t.me/GeekMusik" target="blank"><img src="https://img.shields.io/badge/Geek Music GROUP-black?style=flat&logo=telegram"width="319" height="52"/></a>
+    <a href="https://t.me/GeekMusikUpdate" target="blank"><img src="https://img.shields.io/badge/Geek Music CHANNEL-gold?style=flat&logo=telegram"width="332" height="49"/></a>
+</p>
