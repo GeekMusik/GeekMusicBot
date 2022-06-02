@@ -8,7 +8,8 @@ Geek Music  ᴀᴅᴀʟᴀʜ  ʀᴇᴘᴏ  ᴄʟᴏɴᴇ  ᴅᴀʀɪ  [ʏᴜᴋ�
 ## DEPLOY DI HEROKU
 
 <p align="center"><a href="https://geekmusic.mhpay.repl.co/deploy"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
-<a href="https://dashboard.heroku.com/new?template=https://github.com/GeekMusik/GeekMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/GeekMusik/GeekMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+<a href="https://telegram.dog/XTZ_HerokuBot?start=R2Vla011c2lrL0dlZWtNdXNpY0JvdCBtYXN0ZXI"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a></p>
 
 
 ## DEPLOY OKTETO
