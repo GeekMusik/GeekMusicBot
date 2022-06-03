@@ -14,7 +14,7 @@ Geek Music  ᴀᴅᴀʟᴀʜ  ʀᴇᴘᴏ  ᴄʟᴏɴᴇ  ᴅᴀʀɪ  [ʏᴜᴋ�
 
 ## DEPLOY OKTETO
 
-<a href="https://cloud.okteto.com/deploy?repository=https://github.com/GeekMusik/GeekMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200"/></a>
+<a href="https://cloud.okteto.com/deploy?repository=https://github.com/GeekMusik/GeekMusicBot"><img src="https://okteto.com/develop-okteto.svg" width="200"/></a>
 
 ## STRINGS SESSION PYROGRAM
 
