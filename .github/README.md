@@ -16,6 +16,14 @@ Geek Music  ᴀᴅᴀʟᴀʜ  ʀᴇᴘᴏ  ᴄʟᴏɴᴇ  ᴅᴀʀɪ  [ʏᴜᴋ�
 
 <a href="https://cloud.okteto.com/deploy?repository=https://github.com/GeekMusik/GeekMusicBot"><img src="https://okteto.com/develop-okteto.svg" width="200"/></a>
 
+
+## 🗡️ Deploying on Scalingo
+
+[![Deploy](https://cdn.scalingo.com/deploy/button.svg)](https://dashboard.scalingo.com/create/app?source=https://github.com/GeekMusik/GeekMusicBot)
+
+<br>This Service provides enough resources so that the Bot can run for 30 days without the need to add CC.<b><br/>Scalingo does not restart App every 24 hours meaning you can clone large data which can run for days at a time </b><br><br>
+
+
 ## STRINGS SESSION PYROGRAM
 
 <p align="center"><a href="https://replit.com/@mhpay/strings-session#main.py"><img src="https://img.shields.io/badge/REPLIT-STRINGS-yellow?style=plastic&logo=replit&logoColor=yellow"width="270" height="40" /></a></p>
