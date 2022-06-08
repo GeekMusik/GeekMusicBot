@@ -31,9 +31,6 @@ def lanuages_keyboard(_):
         InlineKeyboardButton(
             text="🇮🇩 Indonesia", callback_data=f"languages:id",
         ),
-        InlineKeyboardButton(
-            text="_["S_B_10"], url=f"https://crwd.in/geekmusic",
-        ),
     )
     keyboard.row(
         InlineKeyboardButton(
