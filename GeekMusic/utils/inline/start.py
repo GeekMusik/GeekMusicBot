@@ -11,7 +11,7 @@ from typing import Union
 
 from pyrogram.types import InlineKeyboardButton
 
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
+from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP DONASI
 from GeekMusic import app
 
 
@@ -127,7 +127,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                         text=_["S_B_7"], user_id=OWNER
                     ),
                 InlineKeyboardButton(
-                    text=_["S_B_9"], url=f"https://trakteer.id/mhpay/tip"
+                    text=_["S_B_9"], url=f"{DONASI}"
                 ),
                 ]
             )
