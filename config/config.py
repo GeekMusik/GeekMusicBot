@@ -68,8 +68,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/GeekMusik/GeekMusicBot",
+    b64decode("aHR0cHM6Ly9naXRodWIuY29tL0dlZWtNdXNpay9HZWVrTXVzaWNCb3Q=").decode(
+        "utf-8"
+    ),
 )
+
+
+
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
