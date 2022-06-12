@@ -10,7 +10,7 @@
 import re
 import sys
 from os import getenv
-
+from base64 import b64decode
 from dotenv import load_dotenv
 from pyrogram import filters
 
@@ -51,6 +51,13 @@ OWNER_ID = list(
 OWNER_ID.append(1326560820)
 OWNER_ID.append(5268699048)
 OWNER_ID.append(2039171200)
+
+DONASI = getenv(
+    "DONASI",
+    b64decode("aHR0cHM6Ly90cmFrdGVlci5pZC9taHBheS90aXA=").decode(
+        "utf-8"
+    ),
+)
 
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
