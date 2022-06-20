@@ -34,6 +34,7 @@ from GeekMusic.utils.inline.play import (livestream_markup,
 from GeekMusic.utils.inline.playlist import botplaylist_markup
 from GeekMusic.utils.logger import play_logs
 from GeekMusic.utils.stream.stream import stream
+from GeekMusic.utils.sub import Gm
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -45,6 +46,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@Gm
 @PlayWrapper
 async def play_commnd(
     client,
