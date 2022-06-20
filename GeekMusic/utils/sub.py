@@ -5,7 +5,7 @@ from GeekMusic import app
 import config
 
 
-def ken(func):
+def Gm(func):
     async def wrapper(_, message: Message):
         user_id = message.from_user.id
         user_name = message.from_user.first_name
