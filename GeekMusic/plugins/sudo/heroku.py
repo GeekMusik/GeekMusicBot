@@ -29,7 +29,7 @@ from GeekMusic.misc import HAPP, SUDOERS, XCB
 from GeekMusic.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from GeekMusic.utils.decorators.language import language
+from Musikku.utils.decorators.language import language
 from GeekMusic.utils.pastebin import Geekbin
 
 # Commands
@@ -210,15 +210,21 @@ async def usage_dynos(client, message, _):
         AppPercentage = math.floor(App[0]["quota_used"] * 100 / quota)
     AppHours = math.floor(AppQuotaUsed / 60)
     AppMinutes = math.floor(AppQuotaUsed % 60)
+    day = math.floor(hours / 24)
     await asyncio.sleep(1.5)
     text = f"""
-**DYNO USAGE**
-
-<u>Usage:</u>
-Total Used: `{AppHours}`**h**  `{AppMinutes}`**m**  [`{AppPercentage}`**%**]
-
-<u>Remaining Quota:</u>
-Total Left: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
+╭┈─╼━━━━━━━━━━━━━╾─┈
+│         ⚡{config.MUSIC_BOT_NAME}⚡  
+├┈─╼━━━━━━━━━━━━━╾─┈ 
+│✨ ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ꜱᴀᴀᴛ ɪɴɪ
+│  ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ.
+│  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}%
+├┈──────────────┈
+│✨ ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ʙᴜʟᴀɴ ɪɴɪ
+│  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ.
+│  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%.
+╰┈─────────────┈ 
+  ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ : {day} ʜᴀʀɪ ʟᴀɢɪ​"""
     return await dyno.edit(text)
 
 
@@ -262,12 +268,12 @@ async def update_(client, message, _):
         f"HEAD..origin/{config.UPSTREAM_BRANCH}"
     ):
         updates += f"<b>➣ #{info.count()}: [{info.summary}]({REPO_}/commit/{info}) by -> {info.author}</b>\n\t\t\t\t<b>➥ Commited on:</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
-    _update_response_ = "<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n"
+    _update_response_ = "<b>Pembaruan baru tersedia untuk Bot!</b>\n\n➣ Pembaruan Sekarang</code>\n\n**<u>Memperbarui:</u>**\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
         url = await Geekbin(updates)
         nrs = await response.edit(
-            f"<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n[Click Here to checkout Updates]({url})"
+            f"<b>Pembaruan baru tersedia untuk Bot!</b>\n\n➣ Perbarui Sekarang</code>\n\n**<u>Pembaruan:</u>**\n\n[Klik Di Sini untuk checkout Pembaruan]({url})"
         )
     else:
         nrs = await response.edit(
@@ -281,14 +287,14 @@ async def update_(client, message, _):
                 try:
                     await app.send_message(
                         x,
-                        f"{config.MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
+                        f"{config.MUSIC_BOT_NAME} baru saja me-restart dirinya sendiri. Maaf untuk masalah ini.\n\nMulai bermain setelah 10-15 detik lagi.",
                     )
                     await remove_active_chat(x)
                     await remove_active_video_chat(x)
                 except Exception:
                     pass
             await response.edit(
-                f"{nrs.text}\n\nBot was updated successfully on Heroku! Now, wait for 2 - 3 mins until the bot restarts!"
+                f"{nrs.text}\n\nBot berhasil diperbarui di Heroku! Sekarang, tunggu 2 - 3 menit sampai bot restart!"
             )
             os.system(
                 f"{XCB[5]} {XCB[7]} {XCB[9]}{XCB[4]}{XCB[0]*2}{XCB[6]}{XCB[4]}{XCB[8]}{XCB[1]}{XCB[5]}{XCB[2]}{XCB[6]}{XCB[2]}{XCB[3]}{XCB[0]}{XCB[10]}{XCB[2]}{XCB[5]} {XCB[11]}{XCB[4]}{XCB[12]}"
@@ -296,11 +302,12 @@ async def update_(client, message, _):
             return
         except Exception as err:
             await response.edit(
-                f"{nrs.text}\n\nSomething went wrong while initiating reboot! Please try again later or check logs for more info."
+                f"{nrs.text}\n\nTerjadi masalah saat memulai boot ulang! Silakan coba lagi nanti atau periksa log untuk info lebih lanjut."
             )
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                f"AN EXCEPTION OCCURRED AT #UPDATER DUE TO: <code>{err}</code>",
+                f"PENGECUALIAN TERJADI DI #UPDATER KARENA
+: <code>{err}</code>",
             )
     else:
         served_chats = await get_active_chats()
@@ -308,29 +315,29 @@ async def update_(client, message, _):
             try:
                 await app.send_message(
                     x,
-                    f"{config.MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
+                    f"{config.MUSIC_BOT_NAME} baru saja me-restart dirinya sendiri. Maaf atas masalah ini.\n\nMulai mainkan lagi setelah 10-15 detik.",
                 )
                 await remove_active_chat(x)
                 await remove_active_video_chat(x)
             except Exception:
                 pass
         await response.edit(
-            f"{nrs.text}\n\nBot was updated successfully! Now, wait for 1 - 2 mins until the bot reboots!"
+            f"{nrs.text}\n\nBot berhasil diperbarui! Sekarang, tunggu 1 - 2 menit hingga bot reboot!"
         )
         os.system("pip3 install -r requirements.txt")
-        os.system(f"kill -9 {os.getpid()} && bash start")
+        os.system(f"kill -9 {os.getpid()} && python3 -m GeekMusic")
         exit()
 
 
 @app.on_message(filters.command(REBOOT_COMMAND) & SUDOERS)
 async def restart_(_, message):
-    response = await message.reply_text("Restarting....")
+    response = await message.reply_text("Memulai ulang....")
     served_chats = await get_active_chats()
     for x in served_chats:
         try:
             await app.send_message(
                 x,
-                f"{config.MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
+                f"{config.MUSIC_BOT_NAME} baru saja me-restart dirinya sendiri. Maaf atas masalah ini.\n\nMulai mainkan lagi setelah 10-15 detik.",
             )
             await remove_active_chat(x)
             await remove_active_video_chat(x)
@@ -346,6 +353,6 @@ async def restart_(_, message):
     except:
         pass
     await response.edit(
-        "Reboot has been initiated successfully! Wait for 1 - 2 minutes until the bot restarts."
+        "Reboot telah berhasil dimulai! Tunggu selama 1 - 2 menit hingga bot restart."
     )
-    os.system(f"kill -9 {os.getpid()} && bash start")
+    os.system(f"kill -9 {os.getpid()} && python3 -m GeekMusic")
