@@ -23,7 +23,7 @@ def Gm(func):
                     chat_info.invite_link
                 try:
                     await message.reply(
-                        f"**Hay kak {rpk}, Silahkan join dulu biar bisa pake bot ini kak**",
+                        f"**Hai kak {rpk}, Silahkan join dulu biar bisa pake bot ini kak**",
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
                             [[InlineKeyboardButton("••ꜱɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ••", url=link)]]
@@ -33,9 +33,7 @@ def Gm(func):
                 except ChatWriteForbidden:
                     pass
         except ChatAdminRequired:
-            await message.reply(
-                f"Saya bukan admin di chat MUST_JOIN chat : {config.MUST_JOIN} !"
-            )
+            await message.reply(f"Saya bukan admin di: {config.MUST_JOIN}!")
         return await func(_, message)
 
     return wrapper
