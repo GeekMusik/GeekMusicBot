@@ -9,7 +9,7 @@
 
 import aiohttp
 
-BASE = "https://m.geekmusic.eu.org/"
+BASE = "https://batbin.me/"
 
 
 async def post(url: str, *args, **kwargs):
