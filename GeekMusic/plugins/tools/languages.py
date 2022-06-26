@@ -22,24 +22,21 @@ from GeekMusic.utils.decorators import (ActualAdminCB, language,
 
 
 def lanuages_keyboard(_):
-    keyboard = InlineKeyboard(row_width=2)
-    keyboard.row(
+        keyboard = InlineKeyboard(row_width=2)
+        keyboard.row(
             InlineKeyboardButton(text="🏴󠁧󠁢󠁥󠁮󠁧󠁿 English", callback_data=f"languages:en"),
             InlineKeyboardButton(text="🇮🇩 Indonesia", callback_data=f"languages:id"),
         )
         keyboard.row(
             InlineKeyboardButton(text="🇮🇩 Jawa", callback_data=f"languages:jawa"),
+            InlineKeyboardButton(text="🇮🇩 Sunda", callback_data=f"languages:sunda"),
         )
-    keyboard.row(
-        InlineKeyboardButton(
-            text=_["BACK_BUTTON"],
-            callback_data=f"settingsback_helper",
-        ),
-        InlineKeyboardButton(
-            text=_["CLOSE_BUTTON"], callback_data=f"close"
-        ),
-    )
-    return keyboard
+        keyboard.row(
+            InlineKeyboardButton(text=_["BACK_BUTTON"], callback_data=f"settingsback_helper"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close"),
+        )
+        return keyboard
+    
 
 
 LANGUAGE_COMMAND = get_command("LANGUAGE_COMMAND")
@@ -84,6 +81,7 @@ async def language_markup(client, CallbackQuery, _):
         return await CallbackQuery.answer(
             "You're already on same language", show_alert=True
         )
+    await set_lang(CallbackQuery.message.chat.id, langauge)
     try:
         _ = get_string(langauge)
         await CallbackQuery.answer(
